@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    // Defining the vars 
+
+    int table,number,number_of_times;
+    cout<<"welcome to the multiple calculator"<<endl;
+    cout<<""<<endl;
+    cout<<""<<endl;
+    // taking input
+    cout<<"enter the number for it's table"<<endl;
+    cin>>table;
+    cout<<"how many multiples do you want. example: 10 or 20 or 30"<<endl;
+    cin>>number_of_times;
+    cout<<"the table for the number entered is: "<<endl;
+    
+
+    // this is for making table number  for all multiples
+    int mytable = table;
+    number = table;
+
+    // this is for showing numbers that the  table is multiplied into
+    for(int times = 1;times <= number_of_times;times++)
+
+    
+    // for making the table and shwoing the multiples of table
+    while(table <= number*number_of_times){
+
+
+        cout<<mytable<<" x "<<times++<<" = "<<table<<endl;
+        table = table + number;
+    }
+    cout<<"please click run again to use the multiple calculator again"<<endl;
+}
